@@ -2,12 +2,12 @@
 
 ## Description
 
-This dataset contains 1024 images, each with a resolution of 48x48 pixels, featuring various horizontal and vertical dashes. The primary task associated with this dataset is to determine whether an image contains more horizontal dashes than vertical dashes.
+This dataset contains 1024 images, each with a resolution of 48x48 pixels, featuring various horizontal and vertical dashes. The primary task associated with this dataset is to determine whether an image contains more horizontal dashes than vertical dashes. The resulting two classes 'horizontal' and 'vertical' form a binary classification problem. The images are located in the images.zip file. 
 
 ## Features
 
 - Image Count: 1024 images for training and testing, respectively.
-- Resolution: 48x48 pixels
+- Resolution: 48x48 pixels.
 - Dash Characteristics: Each dash is 1 pixel thick and 5 pixels long.
 - Orientation Classification: Images contain varying counts of horizontal and vertical dashes, with no images having an equal number of both.
 - Gradient Information Utilization: Effective utilization of gradient information is essential for accurately solving the orientation classification problem.
