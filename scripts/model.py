@@ -21,7 +21,13 @@ class Model(nn.Module):
 
 
 class Model_(nn.Module):
-    
+    """
+    A PyTorch model for performing pre-defined convolutional operations on input data.
+
+    Args:
+        init_randomly (bool): If True, initialize the weights randomly. If False, initialize the weights with specific values.
+    """
+
     def __init__(self, init_randomly):
         super().__init__()
         
@@ -48,6 +54,16 @@ class Model_(nn.Module):
 
 
     def forward(self, x):
+        """
+        Forward pass of the model.
+
+        Args:
+            x (torch.Tensor): The input tensor.
+
+        Returns:
+            torch.Tensor: The output tensor.
+
+        """
         out = F.conv2d(x, self.w)
         out = self.relu(out)
         out = self.conv_1x1(out)
